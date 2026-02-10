@@ -1,7 +1,7 @@
 # cryptocurrency_trading_algorithm
 這個在 IBM Skills Network 上的專案是一個經典的金融科技 (FinTech) 入門實作，教導如何利用 Python 的數據科學生態系來自動化投資決策。
 
-## 專案核心主題 (Core Topics)
+## 專案核心主題
 - 加密貨幣市場資料獲取與處理
 - 量化交易基礎 (Quantitative Trading)：理解演算法交易與手動交易的差異。
 - 數據獲取與清理：從金融 API 提取加密貨幣的歷史價格。使用 yfinance 從 Yahoo Finance 拉取歷史價格資料（BTC-USD 等）
