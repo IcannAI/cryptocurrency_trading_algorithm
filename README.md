@@ -68,33 +68,30 @@ GET：主要依賴yfinance 函式庫向 Yahoo Finance API 發送 GET 請求（�
 #### 資料由 yfinance 即時下載）
 
 ## 應用方向
-個人投資助手：自動追蹤感興趣的貨幣並發送通知。
+- 個人投資助手：自動追蹤感興趣的貨幣並發送通知
+- 市場研究工具：分析不同加密貨幣間的相關性
+- 自動化報表生成：定期產出市場走勢分析圖
+- 股票/外匯/商品期貨的類似回測分析
 
-市場研究工具：分析不同加密貨幣間的相關性。
-
-自動化報表生成：定期產出市場走勢分析圖。
-
-## MVP 方向 (未來開發潛力)
-即時交易機器人 (Live Trading Bot)：串接交易所 API（如 Binance 或 Coinbase）實施真實交易。
-
-情緒分析儀 (Sentiment Trader)：整合 Twitter API，根據社群媒體情緒決定買賣。
-
-多策略對比平台：一個讓使用者輸入不同參數並即時看到回測結果的 Web 應用。
-
-AI 預測模型：將簡單策略升級為機器學習模型（如 LSTM）來預測未來價格。
+## MVP 方向 
+- 即時交易機器人 (Live Trading Bot)：串接交易所 API（如 Binance 或 Coinbase）真實交易。
+- 多幣種移動平均策略優化工具（加入參數掃描、走走測試 Walk-Forward，擴展至股票、外匯，實現多元化投資組合管理。）
+- 加密貨幣投資儀表板(Streamlit / Dash 前端 + 即時資料更新）
+- 情緒分析儀 (Sentiment Trader)：加入 NLP 技術，整合 Twitter API，根據社群媒體情緒決定買賣。
+- 風險調整後報酬分析器（加入 Sharpe Ratio、最大回撤等指標）：讓使用者輸入不同參數並即時看到回測結果的 Web 應用。 
+- AI 預測模型：升級為機器學習模型（如 LSTM、Random Forest）來預測未來價格。
 
 ## Tool 
-語言：Python
-
-數據處理：Pandas, NumPy
-
-視覺化：Matplotlib
-
-金融數據：yfinance
+- Python
+- pandas, numpy #數據處理
+- matplotlib, pyplot #視覺化
+- DateFormatter #時間軸顯示
+- yfinance #金融數據
 
 ## Key Takeaways
-回測不代表未來：歷史表現優異不保證未來獲利。
-
-自動化的威力：演算法能克服人性恐懼與貪婪，嚴格執行紀律。
-
-視覺化的重要性：透過 matplotlib 繪圖能快速發現數據中的異常值或趨勢。
+- 使用 yfinance 快速獲取加密貨幣市場資料的能力
+- 理解 OHLCV 資料結構與基本時間序列分析
+- 設計與實作簡單規則型交易策略（Rule-based Trading）
+- 進行策略回測並視覺化績效（買賣點、累積報酬曲線）
+- 認識程式化交易的核心流程：資料 → 策略 → 回測 → 優化
+- 為機器學習交易、強化學習、即時交易打下基礎
